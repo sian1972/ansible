@@ -2,9 +2,10 @@
 - name: Update and upgrade apt packages
   hosts: all 
 
+  become: True
+  
   tasks:
     - name: API Package Updater
       apt:
         upgrade: yes
         update_cache: yes
-      become: True
