@@ -4,7 +4,7 @@
 
   become: true
   tasks:
-    - name: Update apt packages
+    - name: API Package Updater
       apt:
         upgrade: yes
         update_cache: yes
